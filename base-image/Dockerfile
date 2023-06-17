@@ -4,7 +4,10 @@ MAINTAINER zhangdahai
 
 RUN apt-get update && \
 apt-get install -y vim net-tools && \
-apt-get install -y icedtea-netx && \
+apt-get remove -y *jdk* && \
+apt install -y openjdk-8-jre && \
+apt install -y openjdk-8-jre-headless && \
+apt install -y icedtea-plugin && \
 apt-get install -y ipmitool && \
 apt-get install -y curl nodejs
 
