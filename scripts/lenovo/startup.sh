@@ -71,4 +71,3 @@ fi
 if [ -f /app/jviewer.jnlp ];then
         chmod +x /app/jviewer.jnlp
 fi
-javaws /app/jviewer.jnlp

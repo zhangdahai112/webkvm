@@ -5,7 +5,7 @@ VENDOR=${VENDOR}
 if [ -z $VENDOR ];then
   # shellcheck disable=SC1073
   echo "NO VENDOR Provided"
-  echo "possible Vendor is :"
+  echo "Possible Vendor is :"
   echo "Inspur,DELL,H3C,Supermicro,Suma"
   exit 1
 fi
@@ -28,3 +28,12 @@ else
 fi
 
 /bin/bash $dir/startup.sh
+
+if [ ! -f /app/jviewer.jnlp ];then
+  echo "Failed to get jviewer.jnlp please add QQ:631871336 for support"
+  exit 1
+fi
+
+cat /app/jviewer.jnlp
+
+javaws /app/jviewer.jnlp

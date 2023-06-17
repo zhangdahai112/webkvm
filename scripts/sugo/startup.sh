@@ -48,4 +48,3 @@ wget -O /app/jviewer.jnlp --no-check-certificate --header="Cookie:$SESSION" --he
 if [ -f /app/jviewer.jnlp ];then
 	chmod +x /app/jviewer.jnlp
 fi
-javaws /app/jviewer.jnlp

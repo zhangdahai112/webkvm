@@ -46,4 +46,3 @@ wget -O /app/jviewer.jnlp --tries=2 --no-check-certificate --header "Cookie:Sess
 if [ -f /app/jviewer.jnlp ];then
 	chmod +x /app/jviewer.jnlp
 fi
-javaws /app/jviewer.jnlp
