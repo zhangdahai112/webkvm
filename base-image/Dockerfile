@@ -3,10 +3,7 @@ FROM domistyle/idrac6
 MAINTAINER zhangdahai
 
 RUN echo "[Info] 正在替换apt源为清华apt源..." && \
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse > /etc/apt/sources.list && \
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse >> /etc/apt/sources.list && \
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse >> /etc/apt/sources.list && \
-echo deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse >> /etc/apt/sources.list && \
+echo deb http://mirrors.aliyun.com/ubuntu/ focal main restricted universe multiverse > /etc/apt/sources.list && \
 echo "[Info] 正在更新源..." && \
 apt update && \
 apt-get update && \
