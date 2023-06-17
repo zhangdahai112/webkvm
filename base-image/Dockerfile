@@ -3,7 +3,7 @@ FROM domistyle/idrac6
 MAINTAINER zhangdahai
 
 RUN echo "[Info] 正在替换apt源为清华apt源..." && \
-echo deb deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted > /etc/apt/sources.list && \
+echo deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted > /etc/apt/sources.list && \
 echo "[Info] 正在更新源..." && \
 apt update && \
 apt-get update && \
