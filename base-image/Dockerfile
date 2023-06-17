@@ -11,5 +11,4 @@ apt install -y icedtea-plugin && \
 apt-get install -y ipmitool && \
 apt-get install -y curl nodejs
 
-RUN sed -i '701,705d' /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security ; \
-    sed -i 's|jdk.tls.disabledAlgorithms|# jdk.tls.disabledAlgorithms|g' /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/security/java.security
+RUN sed -i '701,705d' /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/java.security
