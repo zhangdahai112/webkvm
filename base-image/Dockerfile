@@ -5,7 +5,6 @@ MAINTAINER zhangdahai
 RUN echo "[Info] 正在替换apt源为清华apt源..." && \
 echo deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse > /etc/apt/sources.list && \
 echo "[Info] 正在更新源..." && \
-apt update && \
 apt-get update && \
 apt-get install -y vim net-tools && \
 apt-get remove -y *jdk* && \
