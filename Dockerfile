@@ -1,4 +1,4 @@
-FROM registry.cn-qingdao.aliyuncs.com/x-lab/kvm-base:v1.0.0 
+FROM kvm-base:zdh
 
 COPY ./scripts /
 
